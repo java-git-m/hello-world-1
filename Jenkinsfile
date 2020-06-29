@@ -1,7 +1,7 @@
 pipeline {
     agent any
     
-    parameters{
+    parameters([
     choice(choices: ['dev', 'qa', 'intg', 'uat'], description: 'select env', name: 'env')
     [$class: 'CascadeChoiceParameter', choiceType: 'PT_CHECKBOX', description: 'Add Description', filterLength: 1, filterable: false, 
 name: 'envList', randomName: 'choice-parameter-14913050859664', referencedParameters: 'env', 
@@ -15,7 +15,7 @@ return[\'a3\',\'b3\',\'c3\',\'d3\']}
 else{
 return[\'a4\',\'b4\',\'c4\',\'d4\']
 }''']]]  
-    }
+    ])
     stages {
         stage('Build') {
             steps {
