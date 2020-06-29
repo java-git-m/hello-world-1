@@ -1,5 +1,4 @@
 pipeline{
-properties([
 parameters([
 choice(choices: ['dev', 'qa', 'intg', 'uat'], description: 'select env', name: 'env'), 
 [$class: 'CascadeChoiceParameter', choiceType: 'PT_CHECKBOX', description: 'Add Description', filterLength: 1, filterable: false, 
@@ -29,5 +28,8 @@ return [\'C1\']
 }
 else{
 return [\'D1\']
-}''']]]])])
+}''']]]])
+stage("prep"){
+    echo "Checking out repo"
+}
 }
