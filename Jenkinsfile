@@ -28,7 +28,7 @@ properties([
         choiceType: 'PT_SINGLE_SELECT',
         description: 'Select From Drop Down',
         filterLength: 1,
-        filterable: False,
+        filterable: false,
         name: 'Branch',
         randomName: 'choice-parameter-29457526667858',
         referencedParameters: 'Environment',
