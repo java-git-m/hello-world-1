@@ -18,7 +18,7 @@ properties([
                     classpath: [], 
                     sandbox: false, 
                     script: 
-                        'return[\'dev\',\'intg\',\'qa\']'
+                        'return[\'dev\',\'qa\']'
                 ]
             ]
         ], 
