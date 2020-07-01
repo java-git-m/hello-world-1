@@ -20,7 +20,7 @@ properties([
                     classpath: [], 
                     sandbox: false, 
                     script: 
-                        'return["Dev","QA","Stage","Prod"]'
+                        'return[\' \',\'dev\',\'qa\']'
                 ]
             ]
         ], 
@@ -44,10 +44,10 @@ properties([
                     classpath: [], 
                     sandbox: false, 
                     script: 
-                        ''' if (Env.equals("Dev")){
+                        ''' if (Env.equals("dev")){
                                 return["devaaa001","devaaa002","devbbb001","devbbb002","devccc001","devccc002"]
                             }
-                            else if(Env.equals("QA")){
+                            else if(Env.equals("qa")){
                                 return["qaaaa001","qabbb002","qaccc003"]
                             }
                             else if(Env.equals("Stage")){
