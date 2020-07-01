@@ -1,6 +1,5 @@
 
-pipeline {
-    agent any
+
 
 properties([
     parameters([
@@ -65,8 +64,11 @@ properties([
         ]
     ])
 ])
-
-    
+pipeline {
+    agent any
+    environment {
+         vari = ""
+  }
     
     stages {
         stage('Build') {
