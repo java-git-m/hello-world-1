@@ -1,4 +1,7 @@
 
+pipeline {
+    agent any
+
 properties([
     parameters([
         [$class: 'ChoiceParameter', 
@@ -62,8 +65,7 @@ properties([
         ]
     ])
 ])
-pipeline {
-    agent any
+
     
     
     stages {
