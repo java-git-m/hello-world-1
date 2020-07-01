@@ -9,7 +9,6 @@ properties([
             filterLength: 1, 
             filterable: false, 
             name: 'Env', 
-            randomName: 'choice-parameter-5631314439613978', 
             script: [
                 $class: 'GroovyScript', 
                 fallbackScript: [
@@ -31,8 +30,7 @@ properties([
             description: 'Select the Server from the Dropdown List', 
             filterLength: 1, 
             filterable: false, 
-            name: 'Server', 
-            randomName: 'choice-parameter-5631314456178619', 
+            name: 'Server',
             referencedParameters: 'Env', 
             script: [
                 $class: 'GroovyScript', 
