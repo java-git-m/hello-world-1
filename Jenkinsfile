@@ -1,6 +1,3 @@
-
-
-
 properties([
     parameters([
         [$class: 'ChoiceParameter', 
