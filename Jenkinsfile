@@ -71,7 +71,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo "populate env name ${Env}"
+                echo 'populate env name ${Env}'
             }
         }
         stage('Test') {
