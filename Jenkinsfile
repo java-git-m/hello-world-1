@@ -11,7 +11,7 @@ pipeline {
           script('return ["Sao Paulo", "Rio de Janeiro"]')
           fallbackScript('"Error in script"')
         }
-      },
+      }
       activeChoiceReactiveParam('Cities') {
         description('Name of the State')
         filterable() 
