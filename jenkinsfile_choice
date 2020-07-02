@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                echo "${params.Env}"
+                echo ${params.Env}_${params.Server}
             }
         }
     }
