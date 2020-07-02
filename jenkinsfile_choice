@@ -69,20 +69,20 @@ parameters([
 
     
         stage('Build') {
-            steps {
+            //steps {
                 echo 'Building..'
-                echo "${params.Env}"
-            }
+                //echo "${params.Env}"
+           // }
         }
         stage('Test') {
-            steps {
+            //steps {
                 echo 'Testing..'
-            }
+            //}
         }
         stage('Deploy') {
-            steps {
+            //steps {
                 echo 'Deploying....'
-            }
+            //}
         }
     }
 
