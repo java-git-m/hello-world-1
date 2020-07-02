@@ -20,7 +20,7 @@ parameters([
                 classpath: [], 
                 sandbox: false, 
                 script: 
-                    'return["Dev","QA","Stage","Prod","uat"]'
+                    'return["Dev","QA","Stage","uat"]'
             ]
         ]
     ], 
