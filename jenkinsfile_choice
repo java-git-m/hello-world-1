@@ -1,5 +1,7 @@
 pipeline {
     agent any
+    def choice1
+    def choice2
     parameters {
                   activeChoiceParam('choice1') {
                       description('select your choice')
