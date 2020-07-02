@@ -16,7 +16,7 @@ properties(
                                 description: 'select another choice : ',
                                 name       : 'choice2'
                         ]
-
+]
 pipeline {
     agent any
     
