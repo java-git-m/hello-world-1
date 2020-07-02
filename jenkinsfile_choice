@@ -3,14 +3,28 @@ pipeline {
     agent any
     
     parameters {
-        ChoiceParameter('Service') {
-            description('Select service you wan to deploy')
-            choiceType('SINGLE_SELECT')
-            groovyScript {
-                script('return [\'web-service\', \'proxy-service\', \'backend-service\']')
-                fallbackScript('"fallback choice"')
-            }
-        }
+        [$class: 'ChoiceParameter', 
+            choiceType: 'PT_SINGLE_SELECT', 
+            description: 'Select the Env Name from the Dropdown List', 
+            filterLength: 1, 
+            filterable: false, 
+            name: 'Env', 
+            script: [
+                $class: 'GroovyScript', 
+                fallbackScript: [
+                    classpath: [], 
+                    sandbox: false, 
+                    script: 
+                        'return[\'Could not get Env\']'
+                ], 
+                script: [
+                    classpath: [], 
+                    sandbox: false, 
+                    script: 
+                        'return[\'dev\',\'qa\']'
+                ]
+            ]
+        ]
     }
  
     stages {
