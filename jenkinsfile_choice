@@ -3,7 +3,7 @@ pipeline {
     agent any
     
     parameters {
-        activeChoiceParam('Service') {
+        activeChoiceParameter('Service') {
             description('Select service you wan to deploy')
             choiceType('SINGLE_SELECT')
             groovyScript {
