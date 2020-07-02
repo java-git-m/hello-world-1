@@ -1,3 +1,4 @@
+node{
 properties([
 parameters([
     [$class: 'ChoiceParameter', 
@@ -61,8 +62,7 @@ parameters([
     ]
 ])
 ])
-pipeline {
-    agent any
+
    
    
     
